@@ -1,27 +1,27 @@
 Exchange Connector (Unified Inbox)
 ===================================
 
-Programming Language:
+Programming Language
 ---------------------
 	- C/C++
 
-Required Dependencies:
+Required Dependencies
 ---------------------
 	- Boost: sudo apt-get install libboost-all-dev
 	- OpenSSL: sudo apt-get install libssl-dev
 
 
-Compilation:
+Compilation
 --------------------
 	g++ -DWITH_OPENSSL -DDEBUG -o ewsClient sendMsg.cpp soapC.cpp soapExchangeServiceBindingProxy.cpp stdsoap2.cpp ./gsoap/custom/duration.c -lssl -lcrypto
 
 
-Run binaries:
+Run Binaries
 -------------
 	./ewsClient
 
 
-Log Files:
+Log Files
 ----------
 	1. Request logs from UE to Connector:
 		- ue_connector_log.txt
@@ -36,7 +36,7 @@ Log Files:
 		- TEST.log
 
 
-Configuration File: (config.txt)
+Configuration File (config.txt)
 --------------------------------
 	- Details about PORT number of Connector and QUEUE_SIZE of the request from UE to Connector. 
 	- Connector is concurrently processing request from queue. 
