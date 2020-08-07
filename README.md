@@ -1,4 +1,4 @@
-Exchange Connector (Unified Inbox)
+Exchange Connector (Unified Inbox [https://uib.ai/])
 ===================================
 
 Programming Language
